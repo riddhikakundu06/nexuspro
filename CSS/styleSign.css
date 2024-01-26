@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* .container{
+width: 100%;
+height: 100vh;
+background-image: url('../backimg.jpg');
+background-position: center;
+background-size: cover;
+position: relative;
+
+} */
+
+#grad {
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(to bottom left, red, yellow); */
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+/* #grad1{
+width: 60%;
+height: 60vh;
+padding: 0px;
+margin-left: 280px;
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
+} */
+
+
+.form-box {
+    /* border: 2px solid black; */
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 60px 70px;
+    text-align: center;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+
+.form-box h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: rgb(34, 34, 173);
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    border-radius: 4px;
+    background: rgb(34, 34, 173);
+    position: absolute;
+    bottom: -15px;
+    left: 38%;
+    /* transform: translate(-50%); */
+}
+
+.input-field {
+    background: rgb(211, 211, 211);
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    max-height: 65px;
+    transition: max-height 0s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 16px 13px;
+}
+
+form p {
+    text-align: right;
+}
+
+a:hover {
+    color: rgb(148, 23, 133);
+}
+
+#SignIn {
+    text-align: left;
+    margin: 10px;
+}
+
+#SignUpBtn,
+#SignInBtn {
+    padding: 6px;
+    margin: 10px;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#SignUpBtn:hover {
+    background: rgb(85, 42, 240);
+    color: rgb(234, 220, 220);
+}
+
+#SignInBtn:hover {
+    color: rgb(46, 76, 140);
+    background-color: rgb(217, 200, 200);
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: rgb(135, 125, 125);
+
+}
+
+.btn-field button {
+    background-color: rgb(34, 34, 173);
+    color: rgba(211, 211, 211);
+}
+
+.btn-field button.disable {
+    background-color: rgb(142, 142, 150);
+    color: rgb(27, 2, 2);
+}
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-box {
+        width: 60%;
+    }
+}
