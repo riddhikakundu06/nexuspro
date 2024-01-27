@@ -1,3 +1,15 @@
+<?php
+ session_start();
+
+ include("php/config.php");
+ if(!isset($_SESSION['valid'])){
+  header("Location : login.php");
+ }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +19,28 @@
     <title>Home</title>
 </head>
 <body>
-    <h2>Success</h2>
     <div class="navbarRestu">
         <ul>
           <li><a href="home.php">Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Services</a></li>
-          <li><a>Contact</a></li>
-          <!-- <li><button id="signUpBtnRestu">Login</button></li> -->
+          <li><a href="about.php">About</a></li>
+          <li><a href="notWorking.php">Services</a></li>                 <!-- Not working yet -->
+          <li><a href="notWorking.php">Contact</a></li>                  <!-- Not working yet -->
           <li>
-            <button><a href="logout.php">Log Out</a></button>
+            <div class="Btn">
+              <?php
+              $id = $_SESSION['Id'];
+              $query = mysqli_query($con,"SELECT*FROM users WHERE Id=$id");
+
+              while($result = mysqli_fetch_assoc($query)){
+                $res_Uname = $result['Name'];
+                $res_Email = $result['Email'];
+                $res_Phone = $result['Phone'];
+                $res_id = $result['Id'];
+              }
+              ?>
+            <button><a href="php/logout.php">Log Out</a></button>
+            </div>            
           </li>
-          <!-- <li><button id="signUpBtnRestu">Sign Up</button></li> -->
         </ul>
       </div>
       <div class="containerRestu">
@@ -38,7 +60,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
             reprehenderit illum omnis cupiditate fugit blanditiis rerum molestias
             atque nemo voluptatibus!
-            <img src="../img/food.jpg" alt="food image"/>
+            <img src="img/food.jpg" alt="food image"/>
             <button>Order now</button>
           </p>
         </div>

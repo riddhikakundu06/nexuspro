@@ -5,15 +5,6 @@
     box-sizing: border-box;
 }
 
-/* .container{
-width: 100%;
-height: 100vh;
-background-image: url('../backimg.jpg');
-background-position: center;
-background-size: cover;
-position: relative;
-
-} */
 
 #grad {
     width: 100%;
@@ -22,14 +13,6 @@ position: relative;
     /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
     background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
 }
-
-/* #grad1{
-width: 60%;
-height: 60vh;
-padding: 0px;
-margin-left: 280px;
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
-} */
 
 
 .form-box {
@@ -142,4 +125,30 @@ a:hover {
     .form-box {
         width: 60%;
     }
+}
+
+
+.message{
+    text-align: center;
+    background: bisque;
+    padding: 15px 0;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+
+.btn{
+    padding: 6px;
+    margin: 10px;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: bisque;
+    background-color: crimson;
 }

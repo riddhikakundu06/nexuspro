@@ -15,7 +15,7 @@
         <?php 
          
          include("php/config.php");
-         if(isset($_POST['Sign Up'])){
+         if(isset($_POST['SignUp'])){
             $Name = $_POST['Name'];
             $Email = $_POST['Email'];
             $Phone = $_POST['Phone'];
@@ -38,9 +38,7 @@
             echo "<div class='message'>
                       <p>Registration successfully!</p>
                   </div> <br>";
-            echo "<a href='login.php'><button class='btn'>Login Now</button>";
-         
-
+            echo "<a href='login.php'><button class='btn'>Login Now</button>";      
          }
 
          }else{
@@ -49,7 +47,7 @@
 
 
             <h1 id="title">Sign Up</h1>
-                <form id="signupForm">
+                <form id="signupForm" method="POST" action="registration.php">
                 <div class="input-group">
                     <div class="input-field" id="nameField">
                         <i class="fa-solid fa-user"></i>
@@ -69,7 +67,7 @@
                     </div>
                     <p><a href="#">Forgot Password?</a></p>
                     <div class="btn-field">
-                        <button type="submit" id="SignUpBtn">Sign Up</button>
+                        <button type="submit" name="SignUp" value="signUp" id="SignUpBtn">Sign Up</button>
                         <div id="SignIn">
                             Already have an account?
                             <a href="login.php">Sign In</a>

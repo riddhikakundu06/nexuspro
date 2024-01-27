@@ -7,14 +7,18 @@
   
   body {
     background-image: linear-gradient(to right top, #9b6da7, #e56b95, #ff7f5f, #f9b30f, #a8eb12);
+    height: 85vh;
   }
-  
-  .container h2{
+
+  .container {
     align-items: center;
     padding: 50px auto;
     margin: 100px auto;
     width: 70vw ;
     height: 70vh ;
+  }
+ 
+  .container h2{
     text-align: center;
     color: rebeccapurple;
   }
@@ -24,13 +28,13 @@
      height: 60px;
      text-align: center;
      text-decoration: none;
-     margin: 100px 450px;    
+     margin: 50px 450px;    
   } 
 
   .backBtn a{
     border-radius: 6px;
     padding: 10px 10px;
-    height: 100%;
+    height: 100px;
     color: #cf3333;
     background-color: bisque;
     font-size: 20px;

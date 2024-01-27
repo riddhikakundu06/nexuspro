@@ -15,7 +15,7 @@
     <div class="navbarRestu">
       <ul>
         <li id="logoRestu">food</li>
-        <li><a>Home</a></li>
+        <li><a href="home.php">Home</a></li>
         <li><a>About</a></li>
         <li><a>Services</a></li>
         <li><a>Contact</a></li>
